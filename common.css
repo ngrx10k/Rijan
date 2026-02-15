@@ -277,19 +277,19 @@ main {
     color: var(--text-white);
 }
 
-/* Modal for Video Player */
+/* Premium Modal for Video Player */
 .modal {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.95);
+    background: rgba(0, 0, 0, 0.98);
     z-index: 2000;
     opacity: 0;
     pointer-events: none;
-    transition: 0.4s;
-    backdrop-filter: blur(10px);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(25px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -301,44 +301,137 @@ main {
 }
 
 .modal-content {
-    width: 90%;
-    max-width: 1000px;
+    width: 95%;
+    max-width: 1100px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.5s var(--transition-bounce);
+}
+
+.modal.active .modal-content {
+    transform: scale(1);
+}
+
+/* Close Icon Logic: Desktop vs Mobile */
+.close-wrapper {
+    position: absolute;
+    top: -60px;
+    right: 0;
+    z-index: 100;
+}
+
+.desktop-close {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.desktop-close span {
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.desktop-close:hover {
+    color: white;
+    transform: translateX(-5px);
+}
+
+.mobile-close {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 768px) {
+    .desktop-close {
+        display: none;
+    }
+
+    .mobile-close {
+        display: flex;
+    }
+
+    .close-wrapper {
+        display: none;
+    }
+
+    .modal-content {
+        width: 100%;
+        padding: 0 5%;
+    }
 }
 
 #video-container {
     width: 100%;
     aspect-ratio: 16/9;
     background: #000;
-    border-radius: 20px;
+    border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .player-controls {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 1.2rem;
-    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1rem 2rem;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .control-btn {
     background: none;
     border: none;
-    color: white;
+    color: var(--text-muted);
     cursor: pointer;
-    font-size: 1.5rem;
-    opacity: 0.7;
-    transition: 0.2s;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .control-btn:hover {
-    opacity: 1;
-    transform: scale(1.1);
+    color: white;
+    transform: translateY(-2px);
 }
+
+.fullscreen-btn {
+    margin-left: auto;
+    background: var(--primary-gradient);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
 
 @media (max-width: 600px) {
     nav {

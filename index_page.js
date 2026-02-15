@@ -106,13 +106,25 @@ function initializePageFeatures() {
         }
     };
 
-    const closeModal = document.getElementById('close-player');
-    if (closeModal) {
-        closeModal.onclick = () => {
-            document.getElementById('player-modal').classList.remove('active');
-            if (player) player.stopVideo();
-        };
-    }
+    const closeFunctions = () => {
+        document.getElementById('player-modal').classList.remove('active');
+        if (player) player.stopVideo();
+    };
+
+    document.getElementById('close-player').onclick = closeFunctions;
+    document.getElementById('close-player-mobile').onclick = closeFunctions;
+
+    // Fullscreen Logic
+    document.getElementById('btn-fullscreen').onclick = () => {
+        const iframe = document.getElementById('yt-player-placeholder');
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+        } else if (iframe.webkitRequestFullscreen) { /* Safari */
+            iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) { /* IE11 */
+            iframe.msRequestFullscreen();
+        }
+    };
 
     // Video Speed & 10s Skips
     document.getElementById('skip-back').onclick = () => player?.seekTo(player.getCurrentTime() - 10);

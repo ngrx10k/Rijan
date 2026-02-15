@@ -72,24 +72,32 @@
         </section>
     </main>
 
-    <!-- Custom Player Modal -->
+    <!-- Custom Premium Player Modal -->
     <div id="player-modal" class="modal">
+        <button id="close-player-mobile" class="mobile-close">✕</button>
         <div class="modal-content">
+            <div class="close-wrapper">
+                <button id="close-player" class="desktop-close">
+                    CLOSE HUB <span>×</span>
+                </button>
+            </div>
             <div id="video-container">
                 <div id="yt-player-placeholder"></div>
             </div>
             <div class="player-controls">
-                <button class="control-btn" id="skip-back">⏪ 10s</button>
-                <button class="control-btn" id="close-player"
-                    style="font-size:1.2rem; background:rgba(255,59,48,0.2); padding:0.5rem 1.5rem; border-radius:12px; border:1px solid var(--error); color:var(--error); margin:0 2rem;">CLOSE</button>
-                <button class="control-btn" id="skip-forward">10s ⏩</button>
+                <button class="control-btn" id="skip-back">⏪ <span>Back</span></button>
+                <div style="width:1px; height:20px; background:rgba(255,255,255,0.1);"></div>
+                <button class="control-btn" id="skip-forward"><span>Next</span> ⏩</button>
+
                 <select id="playback-speed"
-                    style="background:#2c2c2e; color:white; border:none; padding:0.5rem; border-radius:10px; margin-left:1rem;">
+                    style="background:rgba(255,255,255,0.05); color:white; border:none; padding:0.4rem 0.8rem; border-radius:10px; font-size:0.8rem; margin-left:1rem;">
                     <option value="0.5">0.5x</option>
                     <option value="1" selected>1.0x</option>
                     <option value="1.5">1.5x</option>
                     <option value="2">2.0x</option>
                 </select>
+
+                <button class="fullscreen-btn" id="btn-fullscreen">FULL SCREEN ⛶</button>
             </div>
         </div>
     </div>
