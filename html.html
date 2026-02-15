@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Ultra | Learn Code By Rijan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>HTML Master Reference | Learn Code</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="html_page.css">
 </head>
 
 <body>
@@ -17,199 +18,223 @@
             <a href="index.html">Home</a>
             <a href="html.html" class="active">HTML</a>
             <a href="css.html">CSS</a>
-            <a href="js.html">JavaScript</a>
+            <a href="js.html">JS</a>
+            <a href="c.html">C</a>
+            <a href="cpp.html">C++</a>
+            <a href="csharp.html">C#</a>
         </div>
     </nav>
 
     <main>
         <section class="hero">
-            <h1>HTML Ultra</h1>
-            <p>Master the architectural soul of the web with our interactive live playground and exhaustive reference
-                system.</p>
+            <h1>HTML Architecture</h1>
+            <p>HTML (HyperText Markup Language) is the standard marking language for documents designed to be displayed
+                in a web browser. It defines the structure and layout of a Web document.</p>
         </section>
 
-        <!-- Live Playground Section -->
-        <section class="glass-card" style="margin-bottom: 4rem; padding: 1.5rem;">
-            <div
-                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding: 0 1rem;">
-                <h3 style="margin-bottom: 0;">Interactive Playground</h3>
-                <span style="color: var(--success); font-size: 0.8rem; font-weight: 600;">● LIVE PREVIEW</span>
-            </div>
-            <div class="playground-container">
-                <div class="playground-header">
-                    <div style="display: flex; gap: 6px;">
-                        <span style="width: 12px; height: 12px; background: #ff5f56; border-radius: 50%;"></span>
-                        <span style="width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%;"></span>
-                        <span style="width: 12px; height: 12px; background: #27c93f; border-radius: 50%;"></span>
-                    </div>
-                    <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">index.html</span>
-                </div>
-                <div class="playground-main" id="ultra-playground">
-                    <div class="editor-pane">
-                        <textarea id="html-editor" spellcheck="false"><h1 style="color: #007aff;">Hello World!</h1>
-<p>Type some HTML here to see it rendered on the right...</p>
-<button style="padding: 10px 20px; background: #007aff; color: white; border: none; border-radius: 8px; cursor: pointer;">
-  Click Me
-</button></textarea>
-                    </div>
-                    <div class="preview-pane">
-                        <iframe id="preview-frame"></iframe>
-                    </div>
+        <!-- Concept Cards -->
+        <section class="card-grid" style="margin-bottom: 3rem;">
+            <div class="glass-card">
+                <span class="card-icon">🏗️</span>
+                <h3>Structure</h3>
+                <p>Every HTML document starts with &lt;!DOCTYPE html&gt; and is wrapped in &lt;html&gt; tags.</p>
+                <div class="code-note">
+                    <code>&lt;!DOCTYPE html&gt;</code>
                 </div>
             </div>
-        </section>
-
-        <section class="card-grid">
             <div class="glass-card">
-                <span class="card-icon">🧠</span>
-                <h3>Advanced Semantics</h3>
-                <p>Learn to use <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and
-                    <code>&lt;aside&gt;</code> for superior SEO and accessibility.</p>
+                <span class="card-icon">📋</span>
+                <h3>Metadata</h3>
+                <p>The &lt;head&gt; section contains meta-information about the document, like the &lt;title&gt; and
+                    &lt;link&gt; to CSS.</p>
             </div>
             <div class="glass-card">
-                <span class="card-icon">⚙️</span>
-                <h3>Metadata Power</h3>
-                <p>Master the <code>&lt;head&gt;</code> with OpenGraph tags, modern meta charsets, and resource hints.
-                </p>
+                <span class="card-icon">🔍</span>
+                <h3>Semantics</h3>
+                <p>Tags like &lt;header&gt;, &lt;footer&gt;, and &lt;main&gt; provide meaning to the content for
+                    browsers and SEO.</p>
             </div>
         </section>
 
-        <!-- Ultra Keyword Section -->
+        <!-- Pro Note -->
+        <section class="glass-card"
+            style="margin-bottom: 4rem; border-left: 4px solid var(--primary); background: rgba(0, 122, 255, 0.05);">
+            <h3 style="color: var(--primary);">💡 Advanced Reference Note</h3>
+            <p style="margin-top: 1rem; color: var(--text-body);">
+                Always prioritize semantic tags over generic &lt;div&gt; elements. This not only improves accessibility
+                for screen readers but also boosts your site's ranking on search engines.
+            </p>
+        </section>
+
+        <!-- Keywords Master List -->
         <section class="keyword-section">
             <button class="toggle-btn" id="toggle-keywords">
-                <span class="btn-text">View All HTML Keywords</span>
+                <span class="btn-text">Explore A-Z HTML Keywords</span>
                 <span class="btn-icon">▼</span>
             </button>
-
             <div class="keyword-container" id="keyword-container">
                 <div class="keyword-category">
-                    <h4>🏗️ Structural Foundations</h4>
+                    <h4>🏗️ Structural & Logical</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
-                                <th>Keyword</th>
+                                <th>Tag</th>
                                 <th>Utility</th>
                                 <th>Example Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>&lt;main&gt;</code></td>
-                                <td>Primary content of document</td>
-                                <td class="example-box">&lt;main&gt;...&lt;/main&gt;</td>
+                                <td><code>!DOCTYPE</code></td>
+                                <td>Defines document type</td>
+                                <td><code>&lt;!DOCTYPE html&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;section&gt;</code></td>
-                                <td>Thematic grouping of content</td>
-                                <td class="example-box">&lt;section&gt;&lt;h2&gt;...&lt;/h2&gt;&lt;/section&gt;</td>
+                                <td><code>html</code></td>
+                                <td>Root of document</td>
+                                <td><code>&lt;html&gt;...&lt;/html&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;article&gt;</code></td>
-                                <td>Self-contained composition</td>
-                                <td class="example-box">&lt;article&gt;Blog post&lt;/article&gt;</td>
+                                <td><code>body</code></td>
+                                <td>Content container</td>
+                                <td><code>&lt;body&gt;...&lt;/body&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>div</code></td>
+                                <td>Generic section</td>
+                                <td><code>&lt;div&gt;...&lt;/div&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>main</code></td>
+                                <td>Primary content</td>
+                                <td><code>&lt;main&gt;...&lt;/main&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>section</code></td>
+                                <td>Logical segment</td>
+                                <td><code>&lt;section&gt;...&lt;/section&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>article</code></td>
+                                <td>Independent item</td>
+                                <td><code>&lt;article&gt;...&lt;/article&gt;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="keyword-category">
-                    <h4>⚡ Interactive & Forms</h4>
+                    <h4>📝 Text Formatting</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
-                                <th>Keyword</th>
+                                <th>Tag</th>
                                 <th>Utility</th>
                                 <th>Example Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>&lt;input type="color"&gt;</code></td>
-                                <td>Color picker widget</td>
-                                <td class="example-box">&lt;input type="color"&gt;</td>
+                                <td><code>h1 - h6</code></td>
+                                <td>Headings 1 to 6</td>
+                                <td><code>&lt;h1&gt;Title&lt;/h1&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;input type="range"&gt;</code></td>
-                                <td>Slider control</td>
-                                <td class="example-box">&lt;input type="range"&gt;</td>
+                                <td><code>p</code></td>
+                                <td>Paragraph text</td>
+                                <td><code>&lt;p&gt;Sample text&lt;/p&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;datalist&gt;</code></td>
-                                <td>Autocomplete options</td>
-                                <td class="example-box">&lt;datalist id="codes"&gt;...&lt;/datalist&gt;</td>
+                                <td><code>span</code></td>
+                                <td>Inline container</td>
+                                <td><code>&lt;span&gt;Word&lt;/span&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;progress&gt;</code></td>
-                                <td>Completion progress bar</td>
-                                <td class="example-box">&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</td>
+                                <td><code>strong</code></td>
+                                <td>Important text</td>
+                                <td><code>&lt;strong&gt;Bold&lt;/strong&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>em</code></td>
+                                <td>Emphasized text</td>
+                                <td><code>&lt;em&gt;Italic&lt;/em&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>code</code></td>
+                                <td>Monospace code</td>
+                                <td><code>&lt;code&gt;var x&lt;/code&gt;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="keyword-category">
-                    <h4>💎 Rich Media</h4>
+                    <h4>🎨 Multimedia & Links</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
-                                <th>Keyword</th>
+                                <th>Tag</th>
                                 <th>Utility</th>
                                 <th>Example Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>&lt;svg&gt;</code></td>
-                                <td>Scalable Vector Graphics</td>
-                                <td class="example-box">&lt;svg width="100" height="100"&gt;...&lt;/svg&gt;</td>
+                                <td><code>a</code></td>
+                                <td>Hyperlink</td>
+                                <td><code>&lt;a href="..."&gt;Link&lt;/a&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;canvas&gt;</code></td>
-                                <td>Dynamic scripted graphics</td>
-                                <td class="example-box">&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</td>
+                                <td><code>img</code></td>
+                                <td>Image display</td>
+                                <td><code>&lt;img src="..." alt="..."&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>&lt;figure&gt;</code></td>
-                                <td>Self-contained media content</td>
-                                <td class="example-box">&lt;figure&gt;&lt;img
-                                    ...&gt;&lt;figcaption&gt;...&lt;/figcaption&gt;&lt;/figure&gt;</td>
+                                <td><code>video</code></td>
+                                <td>Embedded video</td>
+                                <td><code>&lt;video src="..."&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>iframe</code></td>
+                                <td>Frames / Embeds</td>
+                                <td><code>&lt;iframe src="..."&gt;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </section>
 
-                <div class="keyword-category">
-                    <h4>🌐 Accessibility (ARIA)</h4>
-                    <table class="keyword-table">
-                        <thead>
-                            <tr>
-                                <th>Keyword</th>
-                                <th>Utility</th>
-                                <th>Example Snippet</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>aria-label</code></td>
-                                <td>Label for assistive tech</td>
-                                <td class="example-box">&lt;button aria-label="Close"&gt;X&lt;/button&gt;</td>
-                            </tr>
-                            <tr>
-                                <td><code>role</code></td>
-                                <td>Defines element purpose</td>
-                                <td class="example-box">&lt;div role="navigation"&gt;...&lt;/div&gt;</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <section class="glass-card" style="margin-top: 3rem;">
+            <h3>Master Page Example</h3>
+            <div class="code-note">
+                <pre style="color: var(--text-muted); font-size: 0.85rem;">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Rijan.Code Portal&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Welcome to Engineering&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+        &lt;article&gt;
+            &lt;h2&gt;Core Logic&lt;/h2&gt;
+            &lt;p&gt;Mastering the foundation...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
             </div>
         </section>
     </main>
 
-    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem;">
-        &copy; 2026 Learn Code By Rijan. Created with AI for the Ultra Experience.
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2026 Learn Code By Rijan
     </footer>
-    <script src="main.js"></script>
+
+    <script src="html_page.js"></script>
 </body>
 
 </html>

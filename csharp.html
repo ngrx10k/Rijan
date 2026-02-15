@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C# | Learn Code</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.CODE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JS</a>
+            <a href="c.html">C</a>
+            <a href="cpp.html">C++</a>
+            <a href="csharp.html" class="active">C#</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>C# Programming</h1>
+            <p>The heart of modern .NET development. Versatile, safe, and powerful for web, desktop, and games.</p>
+        </section>
+
+        <div class="notice-box">
+            <span>⚠️</span>
+            <div>
+                You need a Code Editor (like Visual Studio or VS Code + .NET SDK) on your device.
+            </div>
+        </div>
+
+        <section class="card-grid" style="margin-bottom: 3rem;">
+            <div class="glass-card">
+                <span class="card-icon">💠</span>
+                <h3>Namespaces</h3>
+                <p>Organize your code into logical blocks to avoid name conflicts.</p>
+                <div class="code-note">
+                    <code>using System;</code>
+                </div>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">⚡</span>
+                <h3>Properties</h3>
+                <p>Provide a flexible mechanism to read, write, or compute the value of private fields.</p>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">🎯</span>
+                <h3>Async/Await</h3>
+                <p>Easily handle asynchronous operations for smooth, non-blocking applications.</p>
+            </div>
+        </section>
+
+        <!-- Keywords Section -->
+        <section class="keyword-section">
+            <button class="toggle-btn" id="toggle-keywords">
+                <span class="btn-text">View C# Keywords</span>
+                <span class="btn-icon">▼</span>
+            </button>
+            <div class="keyword-container" id="keyword-container">
+                <div class="keyword-category">
+                    <h4>🛠️ Core Keywords</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>string</code></td>
+                                <td>Sequence of characters</td>
+                                <td><code>string msg = "Hi";</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>async</code></td>
+                                <td>Modifier for async methods</td>
+                                <td><code>async Task Do() { ... }</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>partial</code></td>
+                                <td>Split class over files</td>
+                                <td><code>partial class User { }</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-card" style="margin-top: 3rem;">
+            <h3>Full Example</h3>
+            <div class="code-block">
+                <pre>
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Mastering C# with Rijan");
+    }
+}</pre>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2026 Learn Code By Rijan
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C | Learn Code</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="c_family_page.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.CODE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JS</a>
+            <a href="c.html" class="active">C</a>
+            <a href="cpp.html">C++</a>
+            <a href="csharp.html">C#</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>C Programming</h1>
+            <p>The mother of all modern languages. Master the fundamentals of memory and logic.</p>
+        </section>
+
+        <!-- Notice Box -->
+        <div class="notice-box">
+            <span>⚠️</span>
+            <div>
+                You need a Code Editor (like VS Code + Mingw) on your device to run C code.
+            </div>
+        </div>
+
+        <!-- Concept Cards -->
+        <section class="card-grid" style="margin-bottom: 3rem;">
+            <div class="glass-card">
+                <span class="card-icon">🏗️</span>
+                <h3>Directives</h3>
+                <p>Use `#include <stdio.h>` to access standard input and output functions like `printf`.</p>
+                <div class="code-note">
+                    <code>#include &lt;stdio.h&gt;</code>
+                </div>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">🚀</span>
+                <h3>Main Function</h3>
+                <p>Every C program starts execution from the `main()` function.</p>
+                <div class="code-note">
+                    <code>int main() { return 0; }</code>
+                </div>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">🧠</span>
+                <h3>Pointers</h3>
+                <p>Powerful tools that store memory addresses of other variables.</p>
+            </div>
+        </section>
+
+        <!-- Keywords Section -->
+        <section class="keyword-section">
+            <button class="toggle-btn" id="toggle-keywords">
+                <span class="btn-text">View C Keywords</span>
+                <span class="btn-icon">▼</span>
+            </button>
+            <div class="keyword-container" id="keyword-container">
+                <div class="keyword-category">
+                    <h4>🛠️ Data Types & Vars</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>int</code></td>
+                                <td>Integer values</td>
+                                <td><code>int age = 20;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>char</code></td>
+                                <td>Character data</td>
+                                <td><code>char grade = 'A';</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>float</code></td>
+                                <td>Decimal numbers</td>
+                                <td><code>float price = 9.99;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>🔄 Control Flow</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>if / else</code></td>
+                                <td>Conditional logic</td>
+                                <td><code>if(x > 0)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>while / for</code></td>
+                                <td>Looping structures</td>
+                                <td><code>for(int i=0; i&lt;10; i++)</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-card" style="margin-top: 3rem;">
+            <h3>Full Example</h3>
+            <div class="code-block">
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello Rijan.Code!");
+    return 0;
+}</pre>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2026 Learn Code By Rijan
+    </footer>
+
+    <script src="c_family_page.js"></script>
+</body>
+
+</html>

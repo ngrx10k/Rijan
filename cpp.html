@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn C++ | Learn Code</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.CODE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JS</a>
+            <a href="c.html">C</a>
+            <a href="cpp.html" class="active">C++</a>
+            <a href="csharp.html">C#</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>C++ Programming</h1>
+            <p>Object-Oriented power and system-level performance. The core of game engines and high-performance apps.
+            </p>
+        </section>
+
+        <div class="notice-box">
+            <span>⚠️</span>
+            <div>
+                You need a Code Editor (like VS Code + Mingw) on your device to run C++ code.
+            </div>
+        </div>
+
+        <section class="card-grid" style="margin-bottom: 3rem;">
+            <div class="glass-card">
+                <span class="card-icon">🧱</span>
+                <h3>Classes</h3>
+                <p>The blueprint for objects. Encapsulate data and functions together.</p>
+                <div class="code-note">
+                    <code>class MyClass { ... };</code>
+                </div>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">📦</span>
+                <h3>STL</h3>
+                <p>Standard Template Library provides ready-to-use data structures like `vector` and `list`.</p>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">🚀</span>
+                <h3>Inheritance</h3>
+                <p>Create new classes derived from existing ones to reuse code effectively.</p>
+            </div>
+        </section>
+
+        <!-- Keywords Section -->
+        <section class="keyword-section">
+            <button class="toggle-btn" id="toggle-keywords">
+                <span class="btn-text">View C++ Keywords</span>
+                <span class="btn-icon">▼</span>
+            </button>
+            <div class="keyword-container" id="keyword-container">
+                <div class="keyword-category">
+                    <h4>🛠️ OOP Keywords</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>class</code></td>
+                                <td>Define a new type</td>
+                                <td><code>class Person { ... };</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>public</code></td>
+                                <td>Accessible members</td>
+                                <td><code>public: int age;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>private</code></td>
+                                <td>Hidden members</td>
+                                <td><code>private: string id;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass-card" style="margin-top: 3rem;">
+            <h3>Full Example</h3>
+            <div class="code-block">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Welcome to Learn C++";
+    return 0;
+}</pre>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2026 Learn Code By Rijan
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

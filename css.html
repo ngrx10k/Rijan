@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn CSS | Learn Code By Rijan</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CSS Styling | Learn Code</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="css_page.css">
 </head>
 
 <body>
@@ -17,62 +18,56 @@
             <a href="index.html">Home</a>
             <a href="html.html">HTML</a>
             <a href="css.html" class="active">CSS</a>
-            <a href="js.html">JavaScript</a>
+            <a href="js.html">JS</a>
+            <a href="c.html">C</a>
+            <a href="cpp.html">C++</a>
+            <a href="csharp.html">C#</a>
         </div>
     </nav>
 
     <main>
-        <section class="hero" style="margin-bottom: 3rem;">
-            <h1>Master CSS</h1>
-            <p>Cascading Style Sheets (CSS) is what makes the web beautiful. It controls the layout, colors, and fonts
-                of your site.</p>
+        <section class="hero">
+            <h1>CSS Architecture</h1>
+            <p>Cascading Style Sheets (CSS) is the language we use to style an HTML document. CSS describes how HTML
+                elements should be displayed on screen, paper, or in other media.</p>
         </section>
 
-        <section class="glass-card" style="margin-bottom: 2rem;">
-            <h3>Selection and Styling</h3>
-            <p>Target HTML elements and apply styling rules using selectors:</p>
-            <div class="code-block">
-                <span class="tag">.glass-card</span> {<br>
-                &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">rgba(255, 255, 255,
-                    0.1)</span>;<br>
-                &nbsp;&nbsp;<span class="attr">backdrop-filter</span>: <span class="string">blur(10px)</span>;<br>
-                &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">15px</span>;<br>
-                &nbsp;&nbsp;<span class="attr">transition</span>: <span class="string">0.3s ease</span>;<br>
-                }
-            </div>
-        </section>
-
-        <section class="card-grid">
+        <!-- Concept Cards -->
+        <section class="card-grid" style="margin-bottom: 3rem;">
             <div class="glass-card">
-                <h3>Flexbox Layout</h3>
-                <p>Easy 1-dimensional layouts. Use <code>display: flex</code> to align items horizontally or vertically.
-                </p>
+                <span class="card-icon">🎨</span>
+                <h3>Selectors</h3>
+                <p>Target specific elements using tags, classes (.), or IDs (#). Selectors determine which elements the
+                    styles apply to.</p>
+                <div class="code-note">
+                    <code>.btn { color: white; }</code>
+                </div>
             </div>
             <div class="glass-card">
-                <h3>CSS Grid</h3>
-                <p>Powerful 2-dimensional grid systems for complex layouts with <code>display: grid</code>.</p>
+                <span class="card-icon">📦</span>
+                <h3>Box Model</h3>
+                <p>Every element is a box. The model consists of margins, borders, padding, and the actual content.</p>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">📏</span>
+                <h3>Flexbox/Grid</h3>
+                <p>Modern layout systems that make building responsive designs much easier and more predictable.</p>
             </div>
         </section>
 
-        <div style="text-align: center; margin-top: 4rem;">
-            <a href="js.html" class="learn-more" style="font-size: 1.2rem; justify-content: center;">Next: Add Logic
-                with JS →</a>
-        </div>
-
-        <!-- Keyword Section -->
+        <!-- Keywords Section -->
         <section class="keyword-section">
             <button class="toggle-btn" id="toggle-keywords">
-                <span class="btn-text">View CSS Keywords</span>
+                <span class="btn-text">Explore CSS Properties</span>
                 <span class="btn-icon">▼</span>
             </button>
-
             <div class="keyword-container" id="keyword-container">
                 <div class="keyword-category">
-                    <h4>🎨 Visuals & Colors</h4>
+                    <h4>🌈 Color & Background</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
-                                <th>Keyword</th>
+                                <th>Property</th>
                                 <th>Description</th>
                                 <th>Example</th>
                             </tr>
@@ -81,28 +76,28 @@
                             <tr>
                                 <td><code>color</code></td>
                                 <td>Sets text color</td>
-                                <td class="example-box">color: #6366f1;</td>
+                                <td><code>color: #007aff;</code></td>
                             </tr>
                             <tr>
                                 <td><code>background</code></td>
-                                <td>Sets background surface</td>
-                                <td class="example-box">background: blue;</td>
+                                <td>Sets background bg</td>
+                                <td><code>background: white;</code></td>
                             </tr>
                             <tr>
                                 <td><code>opacity</code></td>
-                                <td>Sets transparency level</td>
-                                <td class="example-box">opacity: 0.5;</td>
+                                <td>Sets transparency</td>
+                                <td><code>opacity: 0.5;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="keyword-category">
-                    <h4>📦 Layout & Spacing</h4>
+                    <h4>📐 Layout & Box</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
-                                <th>Keyword</th>
+                                <th>Property</th>
                                 <th>Description</th>
                                 <th>Example</th>
                             </tr>
@@ -110,53 +105,63 @@
                         <tbody>
                             <tr>
                                 <td><code>display</code></td>
-                                <td>Defines the layout type</td>
-                                <td class="example-box">display: flex;</td>
+                                <td>Layout behavior</td>
+                                <td><code>display: flex;</code></td>
                             </tr>
                             <tr>
                                 <td><code>margin</code></td>
-                                <td>Outside spacing</td>
-                                <td class="example-box">margin: 20px;</td>
+                                <td>Outer spacing</td>
+                                <td><code>margin: 20px;</code></td>
                             </tr>
                             <tr>
                                 <td><code>padding</code></td>
-                                <td>Inside spacing</td>
-                                <td class="example-box">padding: 10px;</td>
+                                <td>Inner spacing</td>
+                                <td><code>padding: 10px;</code></td>
                             </tr>
                             <tr>
-                                <td><code>flex</code></td>
-                                <td>Grows/shrinks flex items</td>
-                                <td class="example-box">flex: 1;</td>
+                                <td><code>border</code></td>
+                                <td>Element border</td>
+                                <td><code>border: 1px solid;</code></td>
                             </tr>
                             <tr>
-                                <td><code>grid</code></td>
-                                <td>Creates a grid layout</td>
-                                <td class="example-box">display: grid;</td>
+                                <td><code>width/height</code></td>
+                                <td>Dimensions</td>
+                                <td><code>width: 100%;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="keyword-category">
-                    <h4>📐 Sizing & Position</h4>
+                    <h4>🔤 Typography</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
-                                <th>Keyword</th>
+                                <th>Property</th>
                                 <th>Description</th>
                                 <th>Example</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>width</code></td>
-                                <td>Sets element width</td>
-                                <td class="example-box">width: 100%;</td>
+                                <td><code>font-family</code></td>
+                                <td>Sets font face</td>
+                                <td><code>font-family: 'Outfit';</code></td>
                             </tr>
                             <tr>
-                                <td><code>position</code></td>
-                                <td>Sets positioning method</td>
-                                <td class="example-box">position: absolute;</td>
+                                <td><code>font-size</code></td>
+                                <td>Sets font size</td>
+                                <td><code>font-size: 1.2rem;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>font-weight</code></td>
+                                <td>Sets bold level</td>
+                                <td><code>font-weight: 700;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>text-align</code></td>
+                                <td>Text alignment</td>
+                                <td><code>text-align: center;</code></td>
                             </tr>
                         </tbody>
                     </table>
@@ -165,10 +170,11 @@
         </section>
     </main>
 
-    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem;">
-        &copy; 2026 Learn Code By Rijan. Created with AI.
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2026 Learn Code By Rijan
     </footer>
-    <script src="main.js"></script>
+
+    <script src="css_page.js"></script>
 </body>
 
 </html>
