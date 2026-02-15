@@ -1,0 +1,154 @@
+@import url('common.css');
+
+.dash-grid {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.stat-num {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin: 1rem 0;
+}
+
+.table-section {
+    padding: 2rem;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.live-tag {
+    background: rgba(52, 199, 89, 0.1);
+    color: var(--success);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    border: 1px solid var(--success);
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th {
+    text-align: left;
+    padding: 1.2rem;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.user-table td {
+    padding: 1.2rem;
+    color: var(--text-white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    font-size: 0.9rem;
+}
+
+.pass-chip {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-family: 'Fira Code';
+    font-size: 0.8rem;
+    color: var(--secondary);
+}
+
+.role-tag {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.role-tag.admin {
+    color: var(--warning);
+    background: rgba(255, 159, 10, 0.1);
+}
+
+.role-tag.user {
+    color: var(--success);
+    background: rgba(52, 199, 89, 0.1);
+}
+
+.btn-micro {
+    border: none;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-micro.edit {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-micro.del {
+    background: var(--error);
+    color: white;
+    margin-left: 5px;
+}
+
+.btn-micro:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.2);
+}
+
+.log-stream {
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 1rem;
+}
+
+.log-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    border-left: 3px solid var(--primary);
+}
+
+.nav-hub-btn {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.logout-btn {
+    background: rgba(255, 59, 48, 0.1);
+    border: 1px solid var(--error);
+    color: var(--error);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .dash-grid {
+        grid-template-columns: 1fr;
+    }
+}

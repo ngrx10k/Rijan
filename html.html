@@ -28,8 +28,8 @@
     <main>
         <section class="hero">
             <h1>HTML Architecture</h1>
-            <p>HTML (HyperText Markup Language) is the standard marking language for documents designed to be displayed
-                in a web browser. It defines the structure and layout of a Web document.</p>
+            <p>HTML (HyperText Markup Language) is the standard marking language for structural web documents. This is
+                the ultimate A-Z Expert Reference.</p>
         </section>
 
         <!-- Concept Cards -->
@@ -43,186 +43,352 @@
                 </div>
             </div>
             <div class="glass-card">
-                <span class="card-icon">📋</span>
-                <h3>Metadata</h3>
-                <p>The &lt;head&gt; section contains meta-information about the document, like the &lt;title&gt; and
-                    &lt;link&gt; to CSS.</p>
-            </div>
-            <div class="glass-card">
                 <span class="card-icon">🔍</span>
                 <h3>Semantics</h3>
-                <p>Tags like &lt;header&gt;, &lt;footer&gt;, and &lt;main&gt; provide meaning to the content for
-                    browsers and SEO.</p>
+                <p>Tags like &lt;header&gt;, &lt;footer&gt;, and &lt;main&gt; provide meaning to the content.</p>
             </div>
-        </section>
-
-        <!-- Pro Note -->
-        <section class="glass-card"
-            style="margin-bottom: 4rem; border-left: 4px solid var(--primary); background: rgba(0, 122, 255, 0.05);">
-            <h3 style="color: var(--primary);">💡 Advanced Reference Note</h3>
-            <p style="margin-top: 1rem; color: var(--text-body);">
-                Always prioritize semantic tags over generic &lt;div&gt; elements. This not only improves accessibility
-                for screen readers but also boosts your site's ranking on search engines.
-            </p>
+            <div class="glass-card">
+                <span class="card-icon">🎨</span>
+                <h3>Hybrid Dev</h3>
+                <p>Combine HTML with CSS and JS to build high-security premium interfaces.</p>
+            </div>
         </section>
 
         <!-- Keywords Master List -->
         <section class="keyword-section">
             <button class="toggle-btn" id="toggle-keywords">
-                <span class="btn-text">Explore A-Z HTML Keywords</span>
+                <span class="btn-text">Explore Massive A-Z HTML Keywords (40+ Tags)</span>
                 <span class="btn-icon">▼</span>
             </button>
             <div class="keyword-container" id="keyword-container">
+
                 <div class="keyword-category">
-                    <h4>🏗️ Structural & Logical</h4>
+                    <h4>🏗️ Structural & Shell</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
                                 <th>Tag</th>
-                                <th>Utility</th>
-                                <th>Example Snippet</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>!DOCTYPE</code></td>
-                                <td>Defines document type</td>
-                                <td><code>&lt;!DOCTYPE html&gt;</code></td>
-                            </tr>
-                            <tr>
                                 <td><code>html</code></td>
-                                <td>Root of document</td>
+                                <td>Root of the document</td>
                                 <td><code>&lt;html&gt;...&lt;/html&gt;</code></td>
                             </tr>
                             <tr>
+                                <td><code>head</code></td>
+                                <td>Metadata container</td>
+                                <td><code>&lt;head&gt;...&lt;/head&gt;</code></td>
+                            </tr>
+                            <tr>
                                 <td><code>body</code></td>
-                                <td>Content container</td>
+                                <td>Main content body</td>
                                 <td><code>&lt;body&gt;...&lt;/body&gt;</code></td>
                             </tr>
                             <tr>
                                 <td><code>div</code></td>
-                                <td>Generic section</td>
+                                <td>Generic block container</td>
                                 <td><code>&lt;div&gt;...&lt;/div&gt;</code></td>
                             </tr>
                             <tr>
                                 <td><code>main</code></td>
-                                <td>Primary content</td>
+                                <td>Primary document content</td>
                                 <td><code>&lt;main&gt;...&lt;/main&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>section</code></td>
-                                <td>Logical segment</td>
-                                <td><code>&lt;section&gt;...&lt;/section&gt;</code></td>
+                                <td><code>span</code></td>
+                                <td>Generic inline container</td>
+                                <td><code>&lt;span&gt;...&lt;/span&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>article</code></td>
-                                <td>Independent item</td>
-                                <td><code>&lt;article&gt;...&lt;/article&gt;</code></td>
+                                <td><code>br</code></td>
+                                <td>Forced line break</td>
+                                <td><code>First Line&lt;br&gt;Next Line</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>hr</code></td>
+                                <td>Horizontal separator</td>
+                                <td><code>&lt;hr /&gt;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="keyword-category">
-                    <h4>📝 Text Formatting</h4>
+                    <h4>📝 Typography & Text</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
                                 <th>Tag</th>
-                                <th>Utility</th>
-                                <th>Example Snippet</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><code>h1 - h6</code></td>
-                                <td>Headings 1 to 6</td>
-                                <td><code>&lt;h1&gt;Title&lt;/h1&gt;</code></td>
+                                <td>Headings (SEO Priority)</td>
+                                <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
                             </tr>
                             <tr>
                                 <td><code>p</code></td>
-                                <td>Paragraph text</td>
-                                <td><code>&lt;p&gt;Sample text&lt;/p&gt;</code></td>
+                                <td>Standard paragraph</td>
+                                <td><code>&lt;p&gt;Content here&lt;/p&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>span</code></td>
-                                <td>Inline container</td>
-                                <td><code>&lt;span&gt;Word&lt;/span&gt;</code></td>
+                                <td><code>strong / b</code></td>
+                                <td>Strong emphasis / Bold</td>
+                                <td><code>&lt;strong&gt;Secure&lt;/strong&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>strong</code></td>
-                                <td>Important text</td>
-                                <td><code>&lt;strong&gt;Bold&lt;/strong&gt;</code></td>
+                                <td><code>em / i</code></td>
+                                <td>Emphasis / Italic</td>
+                                <td><code>&lt;em&gt;Verify&lt;/em&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>em</code></td>
-                                <td>Emphasized text</td>
-                                <td><code>&lt;em&gt;Italic&lt;/em&gt;</code></td>
+                                <td><code>u</code></td>
+                                <td>Underlined text</td>
+                                <td><code>&lt;u&gt;Important&lt;/u&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>code</code></td>
-                                <td>Monospace code</td>
+                                <td><code>strike</code></td>
+                                <td>Legacy deleted text</td>
+                                <td><code>&lt;strike&gt;Old&lt;/strike&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>small</code></td>
+                                <td>Fine-print text</td>
+                                <td><code>&lt;small&gt;© 2026&lt;/small&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>code / tt</code></td>
+                                <td>Monospace code / Teletype</td>
                                 <td><code>&lt;code&gt;var x&lt;/code&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>center</code></td>
+                                <td>Legacy centering (Caution)</td>
+                                <td><code>&lt;center&gt;...&lt;/center&gt;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
                 <div class="keyword-category">
-                    <h4>🎨 Multimedia & Links</h4>
+                    <h4>📋 Lists & Definitions</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
                                 <th>Tag</th>
-                                <th>Utility</th>
-                                <th>Example Snippet</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>ul / li</code></td>
+                                <td>Unordered bullet list</td>
+                                <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>ol</code></td>
+                                <td>Ordered numbered list</td>
+                                <td><code>&lt;ol type="A"&gt;...&lt;/ol&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>dl / dt / dd</code></td>
+                                <td>Definition list structure</td>
+                                <td><code>&lt;dl&gt;&lt;dt&gt;Term&lt;/dt&gt;&lt;dd&gt;Def&lt;/dd&gt;&lt;/dl&gt;</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><code>menu</code></td>
+                                <td>Legacy menu list</td>
+                                <td><code>&lt;menu&gt;&lt;li&gt;1&lt;/li&gt;&lt;/menu&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>📊 Tables & Data</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>table</code></td>
+                                <td>Tabular data container</td>
+                                <td><code>&lt;table border="1"&gt;...&lt;/table&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>tr</code></td>
+                                <td>Table row</td>
+                                <td><code>&lt;tr&gt;...&lt;/tr&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>th</code></td>
+                                <td>Table header cell</td>
+                                <td><code>&lt;th&gt;Header&lt;/th&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>td</code></td>
+                                <td>Table data cell</td>
+                                <td><code>&lt;td&gt;Value&lt;/td&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>⚡ Interactive & Media</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><code>a</code></td>
-                                <td>Hyperlink</td>
-                                <td><code>&lt;a href="..."&gt;Link&lt;/a&gt;</code></td>
+                                <td>Hyperlink / Anchor</td>
+                                <td><code>&lt;a href="..."&gt;Visit&lt;/a&gt;</code></td>
                             </tr>
                             <tr>
                                 <td><code>img</code></td>
-                                <td>Image display</td>
+                                <td>Responsive image embed</td>
                                 <td><code>&lt;img src="..." alt="..."&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>video</code></td>
-                                <td>Embedded video</td>
-                                <td><code>&lt;video src="..."&gt;</code></td>
+                                <td><code>embed</code></td>
+                                <td>External object / system</td>
+                                <td><code>&lt;embed src="..." width="100%"&gt;</code></td>
                             </tr>
                             <tr>
-                                <td><code>iframe</code></td>
-                                <td>Frames / Embeds</td>
-                                <td><code>&lt;iframe src="..."&gt;</code></td>
+                                <td><code>video</code></td>
+                                <td>Native video playback</td>
+                                <td><code>&lt;video src="..." controls&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>marquee</code></td>
+                                <td>Legacy scrolling text</td>
+                                <td><code>&lt;marquee&gt;Rijan.Code&lt;/marquee&gt;</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+                <div class="keyword-category">
+                    <h4>🔗 Forms & User Inputs</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>form</code></td>
+                                <td>User input container</td>
+                                <td><code>&lt;form action="..."&gt;...&lt;/form&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>input</code></td>
+                                <td>Versatile input (text, radio...)</td>
+                                <td><code>&lt;input type="email"&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>select / option</code></td>
+                                <td>Dropdown selection</td>
+                                <td><code>&lt;select&gt;&lt;option&gt;V1&lt;/option&gt;&lt;/select&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>textarea</code></td>
+                                <td>Multi-line text input</td>
+                                <td><code>&lt;textarea rows="3"&gt;...&lt;/textarea&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>🏷️ Metadata & Comments</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Tag</th>
+                                <th>Utility / Note</th>
+                                <th>Expert Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>title</code></td>
+                                <td>Document browser title</td>
+                                <td><code>&lt;title&gt;Page Name&lt;/title&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>meta</code></td>
+                                <td>SEO / Charset / viewport</td>
+                                <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>link</code></td>
+                                <td>External asset link (CSS)</td>
+                                <td><code>&lt;link rel="stylesheet"&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>!-- comment --</code></td>
+                                <td>Internal developer notes</td>
+                                <td><code>&lt;!-- Code logic here --&gt;</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </section>
 
+        <!-- Pro Note -->
+        <section class="glass-card"
+            style="margin-top: 4rem; border-left: 4px solid var(--warning); background: rgba(255, 159, 10, 0.05);">
+            <h3 style="color: var(--warning);">⚠️ Legacy Tag Notice</h3>
+            <p style="margin-top: 1rem; color: var(--text-body);">
+                Tags like <code>&lt;center&gt;</code>, <code>&lt;font&gt;</code>, and <code>&lt;marquee&gt;</code> are
+                deprecated in modern HTML5. While browsers still support them, it is highly recommended to use CSS for
+                alignment, styling, and animations for professional web apps.
+            </p>
+        </section>
+
         <section class="glass-card" style="margin-top: 3rem;">
-            <h3>Master Page Example</h3>
+            <h3>Expert Master Template</h3>
             <div class="code-note">
                 <pre style="color: var(--text-muted); font-size: 0.85rem;">
 &lt;!DOCTYPE html&gt;
-&lt;html&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;title&gt;Rijan.Code Portal&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Premium Rijan.Code&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;Welcome to Engineering&lt;/h1&gt;
-    &lt;/header&gt;
+    &lt;!-- UI Architecture --&gt;
     &lt;main&gt;
-        &lt;article&gt;
-            &lt;h2&gt;Core Logic&lt;/h2&gt;
-            &lt;p&gt;Mastering the foundation...&lt;/p&gt;
-        &lt;/article&gt;
+        &lt;h1&gt;Secure Workspace&lt;/h1&gt;
+        &lt;section&gt;
+            &lt;p&gt;Initializing Hub...&lt;/p&gt;
+        &lt;/section&gt;
     &lt;/main&gt;
 &lt;/body&gt;
 &lt;/html&gt;</pre>
@@ -231,7 +397,7 @@
     </main>
 
     <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.85rem;">
-        &copy; 2026 Learn Code By Rijan
+        &copy; 2026 Ultimate Reference | Rijan.Code
     </footer>
 
     <script src="html_page.js"></script>

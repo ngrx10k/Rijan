@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Rijan.Code</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="admindashboard.css">
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-database-compat.js"></script>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.ADMIN</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-hub-btn">Back to main site</a>
+            <button id="logout" class="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <main class="dash-grid">
+        <!-- Dashboard Statistics -->
+        <aside class="sidebar">
+            <div class="glass-card stat-card">
+                <h3>Total Users</h3>
+                <div id="user-count" class="stat-num">0</div>
+            </div>
+
+            <div class="glass-card action-card">
+                <h3>Create User ID</h3>
+                <div class="input-group">
+                    <input type="text" id="new-id" placeholder="Account ID (numeric or text)">
+                </div>
+                <div class="input-group">
+                    <input type="text" id="new-pass" placeholder="Password (min 6 chars)">
+                </div>
+                <button id="create-btn" class="auth-btn">Authorize Account</button>
+            </div>
+        </aside>
+
+        <!-- Account Management Table -->
+        <section class="content">
+            <div class="glass-card table-section">
+                <div class="header-flex">
+                    <h2>Account Management</h2>
+                    <span class="live-tag">REALTIME DB</span>
+                </div>
+
+                <div class="table-scroll">
+                    <table class="user-table">
+                        <thead>
+                            <tr>
+                                <th>Display ID</th>
+                                <th>System Password</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="user-table-body">
+                            <!-- Items managed by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="glass-card log-section" style="margin-top:2rem;">
+                <h3>System Logs</h3>
+                <div id="log-list" class="log-stream"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- UI Overlay for Editing -->
+    <div id="edit-overlay" class="modal">
+        <div class="modal-content glass-card" style="max-width:350px;">
+            <h3>Update Password</h3>
+            <div class="input-group" style="margin-top:1.5rem;">
+                <input type="text" id="edit-pass-val">
+            </div>
+            <div style="display:flex; gap:10px; margin-top:1.5rem;">
+                <button id="save-change" class="auth-btn">Save</button>
+                <button id="cancel-edit" class="auth-btn" style="background:rgba(255,255,255,0.1);">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="admindashboard.js"></script>
+</body>
+
+</html>

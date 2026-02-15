@@ -1,0 +1,153 @@
+@import url('common.css');
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 3rem;
+}
+
+.auth-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 0.4rem;
+    margin-bottom: 2.5rem;
+    border: 0.5px solid var(--glass-border);
+}
+
+.toggle-tab {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 0.8rem;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: var(--transition-fast);
+}
+
+.toggle-tab.active {
+    background: var(--text-white);
+    color: var(--bg-dark);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 1rem 1.2rem;
+    border-radius: 14px;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.auth-btn {
+    width: 100%;
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 1.2rem;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: var(--transition-ios);
+}
+
+.auth-btn:hover {
+    transform: scale(1.02);
+    filter: brightness(1.1);
+    box-shadow: 0 15px 30px rgba(0, 122, 255, 0.3);
+}
+
+.auth-switch-text {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.auth-switch-text span {
+    color: var(--primary);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.admin-btn-secret {
+    position: absolute;
+    top: -4rem;
+    left: 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.5px solid var(--glass-border);
+    color: var(--text-muted);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.admin-btn-secret.visible {
+    opacity: 1;
+    pointer-events: all;
+    top: -2.5rem;
+}
+
+.status-msg {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 0.8rem;
+    display: none;
+}
+
+.status-msg.error {
+    color: var(--error);
+    background: rgba(255, 59, 48, 0.1);
+    display: block;
+}
+
+.status-msg.success {
+    color: var(--success);
+    background: rgba(52, 199, 89, 0.1);
+    display: block;
+}
