@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript | Learn Code By Rijan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.CODE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html" class="active">JavaScript</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="margin-bottom: 3rem;">
+            <h1>JavaScript Logic</h1>
+            <p>JavaScript is the programming language of the web. It allows you to create interactive, dynamic content.
+            </p>
+        </section>
+
+        <section class="glass-card" style="margin-bottom: 2rem;">
+            <h3>Dynamic Interaction</h3>
+            <p>Use JavaScript to select elements and react to user events like clicks:</p>
+            <div class="code-block">
+                <span class="comment">// Select an element</span><br>
+                <span class="tag">const</span> button = <span class="attr">document</span>.querySelector(<span
+                    class="string">'.btn'</span>);<br>
+                <br>
+                <span class="comment">// Add click listener</span><br>
+                button.addEventListener(<span class="string">'click'</span>, () => {<br>
+                &nbsp;&nbsp;<span class="attr">console</span>.log(<span class="string">'Button was
+                    clicked!'</span>);<br>
+                &nbsp;&nbsp;<span class="attr">alert</span>(<span class="string">'Logic executed!'</span>);<br>
+                });
+            </div>
+        </section>
+
+        <section class="card-grid">
+            <div class="glass-card">
+                <h3>Variables & Types</h3>
+                <p>Store data using <code>const</code> and <code>let</code>. Understand strings, numbers, and objects.
+                </p>
+            </div>
+            <div class="glass-card">
+                <h3>Functions</h3>
+                <p>Write reusable blocks of code. Master arrow functions and passing parameters.</p>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="index.html" class="learn-more" style="font-size: 1.2rem; justify-content: center;">Back to Home
+                Page ←</a>
+        </div>
+
+        <!-- Keyword Section -->
+        <section class="keyword-section">
+            <button class="toggle-btn" id="toggle-keywords">
+                <span class="btn-text">View JS Keywords</span>
+                <span class="btn-icon">▼</span>
+            </button>
+
+            <div class="keyword-container" id="keyword-container">
+                <div class="keyword-category">
+                    <h4>🏷️ Variables & Logic</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>const</code></td>
+                                <td>Declares a constant</td>
+                                <td class="example-box">const x = 5;</td>
+                            </tr>
+                            <tr>
+                                <td><code>let</code></td>
+                                <td>Declares a scoped variable</td>
+                                <td class="example-box">let age = 20;</td>
+                            </tr>
+                            <tr>
+                                <td><code>function</code></td>
+                                <td>Declares a code block</td>
+                                <td class="example-box">function init() {}</td>
+                            </tr>
+                            <tr>
+                                <td><code>if...else</code></td>
+                                <td>Conditional execution</td>
+                                <td class="example-box">if (x > 0) { ... }</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>🌐 DOM & Browser</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>document</code></td>
+                                <td>The root page object</td>
+                                <td class="example-box">document.body</td>
+                            </tr>
+                            <tr>
+                                <td><code>querySelector</code></td>
+                                <td>Finds elements by CSS</td>
+                                <td class="example-box">document.querySelector('h1')</td>
+                            </tr>
+                            <tr>
+                                <td><code>alert</code></td>
+                                <td>Shows a pop-up box</td>
+                                <td class="example-box">alert('Hi!');</td>
+                            </tr>
+                            <tr>
+                                <td><code>console.log</code></td>
+                                <td>Prints to debugger</td>
+                                <td class="example-box">console.log(data);</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>🔄 Loops and Logic</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>for</code></td>
+                                <td>Standard loop syntax</td>
+                                <td class="example-box">for(let i=0; i<5; i++)</td>
+                            </tr>
+                            <tr>
+                                <td><code>while</code></td>
+                                <td>Loop while condition true</td>
+                                <td class="example-box">while (running) { ... }</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem;">
+        &copy; 2026 Learn Code By Rijan. Created with AI.
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

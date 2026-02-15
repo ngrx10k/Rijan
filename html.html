@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Ultra | Learn Code By Rijan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.CODE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="html.html" class="active">HTML</a>
+            <a href="css.html">CSS</a>
+            <a href="js.html">JavaScript</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>HTML Ultra</h1>
+            <p>Master the architectural soul of the web with our interactive live playground and exhaustive reference
+                system.</p>
+        </section>
+
+        <!-- Live Playground Section -->
+        <section class="glass-card" style="margin-bottom: 4rem; padding: 1.5rem;">
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; padding: 0 1rem;">
+                <h3 style="margin-bottom: 0;">Interactive Playground</h3>
+                <span style="color: var(--success); font-size: 0.8rem; font-weight: 600;">● LIVE PREVIEW</span>
+            </div>
+            <div class="playground-container">
+                <div class="playground-header">
+                    <div style="display: flex; gap: 6px;">
+                        <span style="width: 12px; height: 12px; background: #ff5f56; border-radius: 50%;"></span>
+                        <span style="width: 12px; height: 12px; background: #ffbd2e; border-radius: 50%;"></span>
+                        <span style="width: 12px; height: 12px; background: #27c93f; border-radius: 50%;"></span>
+                    </div>
+                    <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: 500;">index.html</span>
+                </div>
+                <div class="playground-main" id="ultra-playground">
+                    <div class="editor-pane">
+                        <textarea id="html-editor" spellcheck="false"><h1 style="color: #007aff;">Hello World!</h1>
+<p>Type some HTML here to see it rendered on the right...</p>
+<button style="padding: 10px 20px; background: #007aff; color: white; border: none; border-radius: 8px; cursor: pointer;">
+  Click Me
+</button></textarea>
+                    </div>
+                    <div class="preview-pane">
+                        <iframe id="preview-frame"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-grid">
+            <div class="glass-card">
+                <span class="card-icon">🧠</span>
+                <h3>Advanced Semantics</h3>
+                <p>Learn to use <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and
+                    <code>&lt;aside&gt;</code> for superior SEO and accessibility.</p>
+            </div>
+            <div class="glass-card">
+                <span class="card-icon">⚙️</span>
+                <h3>Metadata Power</h3>
+                <p>Master the <code>&lt;head&gt;</code> with OpenGraph tags, modern meta charsets, and resource hints.
+                </p>
+            </div>
+        </section>
+
+        <!-- Ultra Keyword Section -->
+        <section class="keyword-section">
+            <button class="toggle-btn" id="toggle-keywords">
+                <span class="btn-text">View All HTML Keywords</span>
+                <span class="btn-icon">▼</span>
+            </button>
+
+            <div class="keyword-container" id="keyword-container">
+                <div class="keyword-category">
+                    <h4>🏗️ Structural Foundations</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;main&gt;</code></td>
+                                <td>Primary content of document</td>
+                                <td class="example-box">&lt;main&gt;...&lt;/main&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;section&gt;</code></td>
+                                <td>Thematic grouping of content</td>
+                                <td class="example-box">&lt;section&gt;&lt;h2&gt;...&lt;/h2&gt;&lt;/section&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;article&gt;</code></td>
+                                <td>Self-contained composition</td>
+                                <td class="example-box">&lt;article&gt;Blog post&lt;/article&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>⚡ Interactive & Forms</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;input type="color"&gt;</code></td>
+                                <td>Color picker widget</td>
+                                <td class="example-box">&lt;input type="color"&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;input type="range"&gt;</code></td>
+                                <td>Slider control</td>
+                                <td class="example-box">&lt;input type="range"&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;datalist&gt;</code></td>
+                                <td>Autocomplete options</td>
+                                <td class="example-box">&lt;datalist id="codes"&gt;...&lt;/datalist&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;progress&gt;</code></td>
+                                <td>Completion progress bar</td>
+                                <td class="example-box">&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>💎 Rich Media</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;svg&gt;</code></td>
+                                <td>Scalable Vector Graphics</td>
+                                <td class="example-box">&lt;svg width="100" height="100"&gt;...&lt;/svg&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;canvas&gt;</code></td>
+                                <td>Dynamic scripted graphics</td>
+                                <td class="example-box">&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;figure&gt;</code></td>
+                                <td>Self-contained media content</td>
+                                <td class="example-box">&lt;figure&gt;&lt;img
+                                    ...&gt;&lt;figcaption&gt;...&lt;/figcaption&gt;&lt;/figure&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>🌐 Accessibility (ARIA)</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Utility</th>
+                                <th>Example Snippet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>aria-label</code></td>
+                                <td>Label for assistive tech</td>
+                                <td class="example-box">&lt;button aria-label="Close"&gt;X&lt;/button&gt;</td>
+                            </tr>
+                            <tr>
+                                <td><code>role</code></td>
+                                <td>Defines element purpose</td>
+                                <td class="example-box">&lt;div role="navigation"&gt;...&lt;/div&gt;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem;">
+        &copy; 2026 Learn Code By Rijan. Created with AI for the Ultra Experience.
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

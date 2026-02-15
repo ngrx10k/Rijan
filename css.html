@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS | Learn Code By Rijan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <nav>
+        <div class="logo">RIJAN.CODE</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html" class="active">CSS</a>
+            <a href="js.html">JavaScript</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="margin-bottom: 3rem;">
+            <h1>Master CSS</h1>
+            <p>Cascading Style Sheets (CSS) is what makes the web beautiful. It controls the layout, colors, and fonts
+                of your site.</p>
+        </section>
+
+        <section class="glass-card" style="margin-bottom: 2rem;">
+            <h3>Selection and Styling</h3>
+            <p>Target HTML elements and apply styling rules using selectors:</p>
+            <div class="code-block">
+                <span class="tag">.glass-card</span> {<br>
+                &nbsp;&nbsp;<span class="attr">background</span>: <span class="string">rgba(255, 255, 255,
+                    0.1)</span>;<br>
+                &nbsp;&nbsp;<span class="attr">backdrop-filter</span>: <span class="string">blur(10px)</span>;<br>
+                &nbsp;&nbsp;<span class="attr">border-radius</span>: <span class="string">15px</span>;<br>
+                &nbsp;&nbsp;<span class="attr">transition</span>: <span class="string">0.3s ease</span>;<br>
+                }
+            </div>
+        </section>
+
+        <section class="card-grid">
+            <div class="glass-card">
+                <h3>Flexbox Layout</h3>
+                <p>Easy 1-dimensional layouts. Use <code>display: flex</code> to align items horizontally or vertically.
+                </p>
+            </div>
+            <div class="glass-card">
+                <h3>CSS Grid</h3>
+                <p>Powerful 2-dimensional grid systems for complex layouts with <code>display: grid</code>.</p>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <a href="js.html" class="learn-more" style="font-size: 1.2rem; justify-content: center;">Next: Add Logic
+                with JS →</a>
+        </div>
+
+        <!-- Keyword Section -->
+        <section class="keyword-section">
+            <button class="toggle-btn" id="toggle-keywords">
+                <span class="btn-text">View CSS Keywords</span>
+                <span class="btn-icon">▼</span>
+            </button>
+
+            <div class="keyword-container" id="keyword-container">
+                <div class="keyword-category">
+                    <h4>🎨 Visuals & Colors</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>color</code></td>
+                                <td>Sets text color</td>
+                                <td class="example-box">color: #6366f1;</td>
+                            </tr>
+                            <tr>
+                                <td><code>background</code></td>
+                                <td>Sets background surface</td>
+                                <td class="example-box">background: blue;</td>
+                            </tr>
+                            <tr>
+                                <td><code>opacity</code></td>
+                                <td>Sets transparency level</td>
+                                <td class="example-box">opacity: 0.5;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>📦 Layout & Spacing</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>display</code></td>
+                                <td>Defines the layout type</td>
+                                <td class="example-box">display: flex;</td>
+                            </tr>
+                            <tr>
+                                <td><code>margin</code></td>
+                                <td>Outside spacing</td>
+                                <td class="example-box">margin: 20px;</td>
+                            </tr>
+                            <tr>
+                                <td><code>padding</code></td>
+                                <td>Inside spacing</td>
+                                <td class="example-box">padding: 10px;</td>
+                            </tr>
+                            <tr>
+                                <td><code>flex</code></td>
+                                <td>Grows/shrinks flex items</td>
+                                <td class="example-box">flex: 1;</td>
+                            </tr>
+                            <tr>
+                                <td><code>grid</code></td>
+                                <td>Creates a grid layout</td>
+                                <td class="example-box">display: grid;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="keyword-category">
+                    <h4>📐 Sizing & Position</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Keyword</th>
+                                <th>Description</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>width</code></td>
+                                <td>Sets element width</td>
+                                <td class="example-box">width: 100%;</td>
+                            </tr>
+                            <tr>
+                                <td><code>position</code></td>
+                                <td>Sets positioning method</td>
+                                <td class="example-box">position: absolute;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem;">
+        &copy; 2026 Learn Code By Rijan. Created with AI.
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
