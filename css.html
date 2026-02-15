@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <div class="global-notice">Use Code Editor: Dedicated for Knowledge</div>
     <div class="bg-gradient"></div>
 
     <nav>
@@ -62,106 +63,271 @@
                 <span class="btn-icon">▼</span>
             </button>
             <div class="keyword-container" id="keyword-container">
+                <!-- CATEGORY 1: LAYOUT & FLEXBOX -->
                 <div class="keyword-category">
-                    <h4>🌈 Color & Background</h4>
+                    <h4>📐 Modern Layout & Flex</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
                                 <th>Property</th>
                                 <th>Description</th>
-                                <th>Example</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>color</code></td>
-                                <td>Sets text color</td>
-                                <td><code>color: #007aff;</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>background</code></td>
-                                <td>Sets background bg</td>
-                                <td><code>background: white;</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>opacity</code></td>
-                                <td>Sets transparency</td>
-                                <td><code>opacity: 0.5;</code></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="keyword-category">
-                    <h4>📐 Layout & Box</h4>
-                    <table class="keyword-table">
-                        <thead>
-                            <tr>
-                                <th>Property</th>
-                                <th>Description</th>
-                                <th>Example</th>
+                                <th>Expert Detail</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><code>display</code></td>
-                                <td>Layout behavior</td>
-                                <td><code>display: flex;</code></td>
+                                <td>Defines container behavior</td>
+                                <td><code>flex</code>, <code>grid</code>, <code>inline-block</code></td>
                             </tr>
                             <tr>
-                                <td><code>margin</code></td>
-                                <td>Outer spacing</td>
-                                <td><code>margin: 20px;</code></td>
+                                <td><code>flex-direction</code></td>
+                                <td>Sets main axis direction</td>
+                                <td><code>row</code>, <code>column</code>, <code>row-reverse</code></td>
                             </tr>
                             <tr>
-                                <td><code>padding</code></td>
-                                <td>Inner spacing</td>
-                                <td><code>padding: 10px;</code></td>
+                                <td><code>justify-content</code></td>
+                                <td>Aligns items along main axis</td>
+                                <td><code>center</code>, <code>space-between</code>, <code>flex-end</code></td>
                             </tr>
                             <tr>
-                                <td><code>border</code></td>
-                                <td>Element border</td>
-                                <td><code>border: 1px solid;</code></td>
+                                <td><code>align-items</code></td>
+                                <td>Aligns items along cross axis</td>
+                                <td><code>center</code>, <code>stretch</code>, <code>flex-start</code></td>
                             </tr>
                             <tr>
-                                <td><code>width/height</code></td>
-                                <td>Dimensions</td>
-                                <td><code>width: 100%;</code></td>
+                                <td><code>gap</code></td>
+                                <td>Sets gutter between items</td>
+                                <td><code>gap: 20px;</code> (Works in Flex & Grid)</td>
+                            </tr>
+                            <tr>
+                                <td><code>flex-wrap</code></td>
+                                <td>Allows items to wrap to next line</td>
+                                <td><code>wrap</code>, <code>nowrap</code>, <code>wrap-reverse</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>grid-template-columns</code></td>
+                                <td>Defines grid column tracks</td>
+                                <td><code>repeat(3, 1fr)</code>, <code>minmax(100px, 1fr)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>grid-column</code></td>
+                                <td>Starting/ending position in grid</td>
+                                <td><code>1 / 3</code> Or <code>span 2</code></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
+                <!-- CATEGORY 2: STYLING & EFFECTS -->
                 <div class="keyword-category">
-                    <h4>🔤 Typography</h4>
+                    <h4>🎨 Styling & Glassmorphism</h4>
                     <table class="keyword-table">
                         <thead>
                             <tr>
                                 <th>Property</th>
                                 <th>Description</th>
-                                <th>Example</th>
+                                <th>Code Snippet</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>font-family</code></td>
-                                <td>Sets font face</td>
-                                <td><code>font-family: 'Outfit';</code></td>
+                                <td><code>background-image</code></td>
+                                <td>Sets a background image</td>
+                                <td><code>linear-gradient(45deg, #000, #444)</code></td>
                             </tr>
                             <tr>
-                                <td><code>font-size</code></td>
-                                <td>Sets font size</td>
-                                <td><code>font-size: 1.2rem;</code></td>
+                                <td><code>box-shadow</code></td>
+                                <td>Adds shadow effect to element</td>
+                                <td><code>0 10px 30px rgba(0,0,0,0.5)</code></td>
                             </tr>
                             <tr>
-                                <td><code>font-weight</code></td>
-                                <td>Sets bold level</td>
-                                <td><code>font-weight: 700;</code></td>
+                                <td><code>backdrop-filter</code></td>
+                                <td>Applies filter behind element</td>
+                                <td><code>blur(10px)</code> (Glassmorphism Core)</td>
                             </tr>
                             <tr>
-                                <td><code>text-align</code></td>
-                                <td>Text alignment</td>
-                                <td><code>text-align: center;</code></td>
+                                <td><code>border-radius</code></td>
+                                <td>Rounds element corners</td>
+                                <td><code>12px</code> Or <code>50%</code> (Circle)</td>
+                            </tr>
+                            <tr>
+                                <td><code>border-image</code></td>
+                                <td>Draws border using an image</td>
+                                <td><code>url(border.png) 30 round</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>outline</code></td>
+                                <td>Line outside the border</td>
+                                <td><code>2px solid var(--primary)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>box-sizing</code></td>
+                                <td>How width/height is calculated</td>
+                                <td><code>border-box</code> (Standard)</td>
+                            </tr>
+                            <tr>
+                                <td><code>object-fit</code></td>
+                                <td>Resize image/video to fit box</td>
+                                <td><code>cover</code>, <code>contain</code>, <code>fill</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- CATEGORY 3: VISUAL EFFECTS & FILTERS -->
+                <div class="keyword-category">
+                    <h4>✨ Advanced Visual Filters</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                                <th>Values</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>filter</code></td>
+                                <td>Image/Element adjustments</td>
+                                <td><code>blur()</code>, <code>brightness()</code>, <code>contrast()</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>mix-blend-mode</code></td>
+                                <td>How content blends with BG</td>
+                                <td><code>multiply</code>, <code>screen</code>, <code>overlay</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>clip-path</code></td>
+                                <td>Creates a clipping region</td>
+                                <td><code>circle(50%)</code>, <code>polygon(...)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>mask-image</code></td>
+                                <td>Masking using an image</td>
+                                <td><code>linear-gradient(black, transparent)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>visibility</code></td>
+                                <td>Show/Hide without layout shift</td>
+                                <td><code>visible</code>, <code>hidden</code>, <code>collapse</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>cursor</code></td>
+                                <td>Type of pointer shown</td>
+                                <td><code>pointer</code>, <code>wait</code>, <code>not-allowed</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>user-select</code></td>
+                                <td>Controls text selection</td>
+                                <td><code>none</code>, <code>auto</code>, <code>all</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>overflow</code></td>
+                                <td>Handles content spill</td>
+                                <td><code>hidden</code>, <code>auto</code>, <code>scroll</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- CATEGORY 4: ANIMATIONS & TRANSITIONS -->
+                <div class="keyword-category">
+                    <h4>🔄 Dynamic Interactions</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                                <th>Expert Settings</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>transition</code></td>
+                                <td>Smooth property changes</td>
+                                <td><code>all 0.3s ease-in-out</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>transform</code></td>
+                                <td>2D or 3D rotations/scales</td>
+                                <td><code>rotate(45deg)</code>, <code>scale(1.1)</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>animation</code></td>
+                                <td>Keyframe animation trigger</td>
+                                <td><code>spin 2s linear infinite</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>perspective</code></td>
+                                <td>3D depth effect</td>
+                                <td><code>800px</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>transition-delay</code></td>
+                                <td>Waiting time before start</td>
+                                <td><code>0.5s</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>scroll-behavior</code></td>
+                                <td>Smooth page scrolling</td>
+                                <td><code>smooth</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>pointer-events</code></td>
+                                <td>Interaction response</td>
+                                <td><code>none</code> (Ignores clicks)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- CATEGORY 5: POSITIONING & DEPTH -->
+                <div class="keyword-category">
+                    <h4>📍 Positioning & Logic</h4>
+                    <table class="keyword-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                                <th>Typical Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>position</code></td>
+                                <td>Placement strategy</td>
+                                <td><code>absolute</code>, <code>relative</code>, <code>sticky</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>z-index</code></td>
+                                <td>Stack order (depth)</td>
+                                <td><code>9999</code> (Top-most)</td>
+                            </tr>
+                            <tr>
+                                <td><code>top / left</code></td>
+                                <td>Offset for positioned items</td>
+                                <td><code>top: 0; left: 50%</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>float</code></td>
+                                <td>Legacy layout method</td>
+                                <td><code>left</code>, <code>right</code>, <code>none</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>clear</code></td>
+                                <td>Clear floating elements</td>
+                                <td><code>both</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>vertical-align</code></td>
+                                <td>Inline item positioning</td>
+                                <td><code>middle</code>, <code>sub</code>, <code>super</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>aspect-ratio</code></td>
+                                <td>Fixed width/height ratio</td>
+                                <td><code>16 / 9</code>, <code>1 / 1</code></td>
                             </tr>
                         </tbody>
                     </table>

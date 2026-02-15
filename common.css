@@ -407,3 +407,19 @@ main {
     letter-spacing: 2px;
     animation: pulse 1.5s infinite;
 }
+
+/* Global Notice Bar */
+.global-notice {
+    background: var(--primary-gradient);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
